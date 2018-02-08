@@ -1,0 +1,290 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: CenturyGothicRegular, Merriweather,'Helvetica Neue',Arial,sans-serif;
+}
+
+hr {
+    max-width: 50px;
+    border-color: #A998A2;
+    border-width: 3px;
+}
+
+hr.light {
+    border-color: #fff;
+}
+
+@font-face {
+  font-family: 'FARRAY';
+  src: url('../fonts/FARRAY.otf');
+}
+
+@font-face {
+  font-family: 'CenturyGothicRegular';
+  src: url('../fonts/CenturyGothicRegular.ttf');
+}
+
+
+a {
+    color: #f05f40;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+a:hover,
+a:focus {
+    color: #eb3812;
+}
+
+h1, h2 {
+    font-family: 'FARRAY';
+}
+
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'CenturyGothicRegular', 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.bg-primary {
+    background-color: #A998A2;
+}
+
+.bg-dark {
+    color: #fff;
+    background-color: red;
+}
+
+section {
+    padding: 30px 0;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    background-image: url(../img/header.png);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .header-content {
+    position: relative;
+    width: 100%;
+    padding: 100px 15px;
+    text-align: center;
+}
+
+header .header-content .header-content-inner h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header .header-content .header-content-inner hr {
+    margin: 30px auto;
+}
+
+header .header-content .header-content-inner p {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,.7);
+}
+
+@media(min-width:768px) {
+    header {
+        min-height: 100%;
+    }
+
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        padding: 0 50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    header .header-content .header-content-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+    }
+
+    header .header-content .header-content-inner p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+        font-size: 18px;
+    }
+}
+
+.section-heading {
+    margin-top: 0;
+}
+
+.center {
+  display: table;
+  width: 100%;
+}
+
+#social-test {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30px;
+}
+
+#social-test {
+  margin-top: 10px;
+}
+
+#social-test .social {
+  padding-left: 0px;
+}
+#social-test li {
+  display: inline-block;
+}
+#social-test li a {
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 6px;
+  list-style-type: none;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  padding: 1%;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  transition: ease .3s;
+}
+#social-test li a:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.social:hover > li {
+  opacity: 0.5;
+}
+.social:hover > li:hover {
+  opacity: 1;
+}
+.credits,
+.credits a {
+  font-size: 20px;
+  font-family: Open Sans;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    margin: auto;   
+}
+
+.openinghours {
+    font-family:Lucida Console;
+    border-radius:4px;
+    box-shadow: 0 0 10px black;
+    padding:0 10px 0 10px;
+    overflow: hidden;
+    display: inline-block;
+}
+.openinghourscontent {
+    float:left;
+}
+.openinghourscontent h2 {
+    display:block;
+    text-align:center;
+    margin-top:.33em;
+}
+.openinghourscontent button {
+    color:white;
+    font-family:Courier New;
+    font-size:large;
+    font-weight:bolder;
+    background-color:#4679BD;
+    border-radius:4px;
+    width:100%;
+    margin-bottom:10px;
+}
+.today {
+    color: #8AC007;
+}
+.opening-hours-table tr td:first-child {
+    font-weight:bold;
+}
+#open-status {
+    display:block;
+    margin-top:-1em;
+    text-align:center;
+    border:dotted lightgrey 3px;
+}
+.openorclosed:after {
+    content:" ouverts durant ces horaires :";
+}
+.open {
+    color:green;
+}
+.open:after {
+    content:" ouverts";
+    color: #6C0;
+}
+.closed:after {
+    content:" fermés";
+    color: red;
+}
+.opening-hours-table tr td {
+    padding:5px;
+}
+
+.recette {
+    clear: both;
+}
+
+.recette > img {
+    width: 200px;
+    border: solid 1px;
+    margin-bottom: 10px;
+}
+
+.recette-image-left {
+    float: left;
+    margin-right: 10px;
+}
+
+.recette-image-right {
+    float: right;
+    margin-left: 10px;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+}
+
+.img-centered {
+    margin: auto;
+    display: block;
+}
