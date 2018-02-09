@@ -5,7 +5,7 @@ body {
 }
 
 body {
-    font-family: CenturyGothicRegular, Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: CenturyGothicRegular, Merriweather, 'Helvetica Neue', Arial, sans-serif;
 }
 
 hr {
@@ -14,18 +14,18 @@ hr {
     border-width: 3px;
 }
 
-hr.light {
+.light {
     border-color: #fff;
 }
 
 @font-face {
-  font-family: 'FARRAY';
-  src: url('../fonts/FARRAY.otf');
+    font-family: 'FARRAY';
+    src: url('../fonts/FARRAY.otf');
 }
 
 @font-face {
-  font-family: 'CenturyGothicRegular';
-  src: url('../fonts/CenturyGothicRegular.ttf');
+    font-family: 'CenturyGothicRegular';
+    src: url('../fonts/CenturyGothicRegular.ttf');
 }
 
 
@@ -41,7 +41,8 @@ a:focus {
     color: #eb3812;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'FARRAY';
 }
 
@@ -50,7 +51,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'CenturyGothicRegular', 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'CenturyGothicRegular', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 p {
@@ -72,19 +73,25 @@ section {
     padding: 30px 0;
 }
 
+/*------------ANCIEN HEADER------------- */
+
 header {
     position: relative;
     width: 100%;
-    min-height: auto;
+/*    min-height: auto;*/
     text-align: center;
     color: #fff;
+    /*
     background-image: url(../img/header.png);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+*/
+    background-color: black;
 }
+
 
 header .header-content {
     position: relative;
@@ -107,7 +114,7 @@ header .header-content .header-content-inner hr {
 header .header-content .header-content-inner p {
     font-size: 16px;
     font-weight: 300;
-    color: rgba(255,255,255,.7);
+    color: rgba(255, 255, 255, .7);
 }
 
 @media(min-width:768px) {
@@ -138,153 +145,259 @@ header .header-content .header-content-inner p {
     }
 }
 
+
+
+/*--------HEADER VIDEO----------*/
+
+@keyframes animVideo {
+    0% {
+
+        transform: translateY(0px);
+        width: 100%;
+
+
+    }
+    70% {
+        transform: translateY(0);
+        width: 100%;
+    }
+
+    100% {
+        transform: translateY(-1000px) ;
+        width: 0;
+
+    }
+
+}
+
+header video {
+    animation-name: animVideo;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/*------------------------------*/
+
 .section-heading {
     margin-top: 0;
 }
 
 .center {
-  display: table;
-  width: 100%;
+    display: table;
+    width: 100%;
 }
 
 #social-test {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  font-size: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30px;
 }
 
 #social-test {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 #social-test .social {
-  padding-left: 0px;
+    padding-left: 0px;
 }
+
 #social-test li {
-  display: inline-block;
+    display: inline-block;
 }
+
 #social-test li a {
-  color: rgba(255, 255, 255, 0.6);
-  border-radius: 6px;
-  list-style-type: none;
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  padding: 1%;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  cursor: pointer;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  transition: ease .3s;
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 6px;
+    list-style-type: none;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    padding: 1%;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    transition: ease .3s;
 }
+
 #social-test li a:hover {
-  color: #ffffff;
-  border: 1px solid #ffffff;
+    color: #ffffff;
+    border: 1px solid #ffffff;
 }
+
 .social:hover > li {
-  opacity: 0.5;
+    opacity: 0.5;
 }
+
 .social:hover > li:hover {
-  opacity: 1;
+    opacity: 1;
 }
+
 .credits,
 .credits a {
-  font-size: 20px;
-  font-family: Open Sans;
-  color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    font-family: Open Sans;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media all and (max-width: 990px) {
+    .credits,
+    .credits a {
+        font-size: 18px;
+        font-family: Open Sans;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
 }
 
 #map {
     height: 400px;
     width: 100%;
-    margin: auto;   
+    margin: auto;
 }
 
 .openinghours {
-    font-family:Lucida Console;
-    border-radius:4px;
+    font-family: Lucida Console;
+    border-radius: 4px;
     box-shadow: 0 0 10px black;
-    padding:0 10px 0 10px;
+    padding: 0 10px 0 10px;
     overflow: hidden;
     display: inline-block;
+    margin-top: 20px;
 }
+
 .openinghourscontent {
-    float:left;
+    float: left;
 }
+
 .openinghourscontent h2 {
-    display:block;
-    text-align:center;
-    margin-top:.33em;
+    display: block;
+    text-align: center;
+    margin-top: .33em;
 }
+
 .openinghourscontent button {
-    color:white;
-    font-family:Courier New;
-    font-size:large;
-    font-weight:bolder;
-    background-color:#4679BD;
-    border-radius:4px;
-    width:100%;
-    margin-bottom:10px;
-}
-.today {
-    color: #8AC007;
-}
-.opening-hours-table tr td:first-child {
-    font-weight:bold;
-}
-#open-status {
-    display:block;
-    margin-top:-1em;
-    text-align:center;
-    border:dotted lightgrey 3px;
-}
-.openorclosed:after {
-    content:" ouverts durant ces horaires :";
-}
-.open {
-    color:green;
-}
-.open:after {
-    content:" ouverts";
-    color: #6C0;
-}
-.closed:after {
-    content:" fermés";
-    color: red;
-}
-.opening-hours-table tr td {
-    padding:5px;
-}
-
-.recette {
-    clear: both;
-}
-
-.recette > img {
-    width: 200px;
-    border: solid 1px;
+    color: white;
+    font-family: Courier New;
+    font-size: large;
+    font-weight: bolder;
+    background-color: #4679BD;
+    border-radius: 4px;
+    width: 100%;
     margin-bottom: 10px;
 }
 
-.recette-image-left {
-    float: left;
-    margin-right: 10px;
+.today {
+    color: #8AC007;
 }
 
-.recette-image-right {
-    float: right;
-    margin-left: 10px;
+.opening-hours-table tr td:first-child {
+    font-weight: bold;
 }
 
-@media (min-width: 1200px) {
-    .container{
-        max-width: 970px;
-    }
-}
-
-.img-centered {
-    margin: auto;
+#open-status {
     display: block;
+    margin-top: -1em;
+    text-align: center;
+    border: dotted lightgrey 3px;
 }
+
+.openorclosed:after {
+    content: " ouverts durant ces horaires :";
+}
+
+.open {
+    color: green;
+}
+
+.open:after {
+    content: " ouverts";
+    color: #6C0;
+}
+
+.closed:after {
+    content: " fermés";
+    color: red;
+}
+
+.opening-hours-table tr td {
+    padding: 5px;
+}
+
+
+
+/* NICOLAS */
+
+.produit_main {
+    display: flex;
+    flex-direction: column;
+}
+
+.recette {
+    display: flex;
+    margin: 10px 0;
+}
+
+.recette:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.recette div img {
+    margin-right: 15px;
+    border: solid 1px;
+}
+
+
+
+.formulaire {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+   margin: auto;
+    padding: 10px;
+}
+
+input, textarea {
+    margin: 10px
+}
+textarea {
+    height: 200px;
+}
+
+.form_button {
+    width: 200px;
+    margin: auto;
+}
+
+@media all and (max-width: 990px) {
+    .recette {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .recette:nth-child(2n) {
+        display: flex;
+        flex-direction: column;
+    }
+    .recette div img {
+        margin-right: 0;
+        width: 100%;
+    }
+    video {
+        display: none;
+    }
+    .formulaire {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+       margin: auto;
+}
+    
+}
+
