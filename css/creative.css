@@ -358,8 +358,9 @@ header video {
     width: 500px;
     display: flex;
     flex-direction: column;
-   margin: auto;
+    margin: auto;
     padding: 10px;
+    color: black;
 }
 
 input, textarea {
@@ -397,7 +398,7 @@ textarea {
     display: flex;
     flex-direction: column;
        margin: auto;
-}
+    }
     
 }
 
