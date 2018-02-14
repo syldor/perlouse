@@ -1,6 +1,9 @@
 @font-face {
   font-family: FARRAY;
   src: url('../fonts/FARRAY.otf');
+}
+@font-face {
+
   font-family: CenturyGothicRegular;
   src: url('../fonts/CenturyGothicRegular.ttf');
 }
