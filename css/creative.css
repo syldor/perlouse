@@ -1,3 +1,13 @@
+@font-face {
+  font-family: FARRAY;
+  src: url('../fonts/FARRAY.otf');
+}
+@font-face {
+
+  font-family: CenturyGothicRegular;
+  src: url('../fonts/CenturyGothicRegular.ttf');
+}
+
 html,
 body {
     width: 100%;
@@ -18,17 +28,6 @@ hr {
     border-color: #fff;
 }
 
-@font-face {
-    font-family: 'FARRAY';
-    src: url('../fonts/FARRAY.otf');
-}
-
-@font-face {
-    font-family: 'CenturyGothicRegular';
-    src: url('../fonts/CenturyGothicRegular.ttf');
-}
-
-
 a {
     color: #f05f40;
     -webkit-transition: all .35s;
@@ -43,15 +42,14 @@ a:focus {
 
 h1,
 h2 {
-    font-family: 'FARRAY';
+    font-family: FARRAY, Arial, sans-serif;
 }
-
 
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'CenturyGothicRegular', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: CenturyGothicRegular, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 p {
@@ -72,8 +70,9 @@ p {
 section {
     padding: 30px 0;
 }
-
-/*------------ANCIEN HEADER------------- */
+/*-------------------------------*/
+/*------------HEADER-------------*/
+/*-------------------------------*/
 
 header {
     position: relative;
@@ -146,37 +145,49 @@ header .header-content .header-content-inner p {
 }
 
 
-
-/*--------HEADER VIDEO----------*/
+/*-------------------------------*/
+/*---------HEADER VIDEO----------*/
+/*-------------------------------*/
 
 @keyframes animVideo {
     0% {
-
-        transform: translateY(0px);
+        transform: translate(0px);
         width: 100%;
-
-
     }
     70% {
-        transform: translateY(0);
+        transform: translate(0);
         width: 100%;
     }
 
     100% {
-        transform: translateY(-1000px) ;
+        transform: translate(720px, -1000px);
         width: 0;
-
     }
-
 }
 
 header video {
     animation-name: animVideo;
     animation-duration: 6s;
     animation-fill-mode: forwards;
-    width: 100%;
-    margin-top: 20px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
+@media all and (max-width: 768px) {
+  header video {
+    animation-name: animVideo;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    height: 100%;
+    position: absolute;
+    top: -10px;
+    left: 0;
+  }
+}
+
+
 
 
 /*------------------------------*/
@@ -241,7 +252,7 @@ header video {
 .credits,
 .credits a {
     font-size: 20px;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -249,7 +260,7 @@ header video {
     .credits,
     .credits a {
         font-size: 18px;
-        font-family: Open Sans;
+        font-family: 'Open Sans';
         color: rgba(255, 255, 255, 0.6);
     }
 
@@ -262,7 +273,7 @@ header video {
 }
 
 .openinghours {
-    font-family: Lucida Console;
+    font-family: 'Lucida Console';
     border-radius: 4px;
     box-shadow: 0 0 10px black;
     padding: 0 10px 0 10px;
@@ -283,7 +294,7 @@ header video {
 
 .openinghourscontent button {
     color: white;
-    font-family: Courier New;
+    font-family: 'Courier New';
     font-size: large;
     font-weight: bolder;
     background-color: #4679BD;
@@ -379,26 +390,20 @@ textarea {
     .recette {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: center;}
 
-    }
     .recette:nth-child(2n) {
         display: flex;
-        flex-direction: column;
-    }
+        flex-direction: column;}
+
     .recette div img {
         margin-right: 0;
-        width: 100%;
-    }
-    video {
-        display: none;
-    }
+        width: 100%;}
+
+
     .formulaire {
     width: 90%;
     display: flex;
     flex-direction: column;
-       margin: auto;
-    }
-    
+    margin: auto;}
 }
-
