@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="css/creative.css" type="text/css">
 
+
 </head>
 
 <body id="page-top">
@@ -39,6 +40,7 @@
   <header>
 
     <div class="header-content">
+
       <div class="header-content-inner">
         <img src="img/logo.png" alt="perlouse" style="width: 30%">
         <h1>Perlouse</h1>
@@ -47,13 +49,13 @@
           <p>Pigalle - 49 rue de Douai</p>
         </div>
       </div>
-      <video autoplay>
+
+      <video id="video" autoplay>
         <source src="video/video-1518065290.mp4" type="video/mp4">
           Your browser does not support the video tag.
       </video>
+
     </div>
-
-
 
   </header>
 
@@ -290,6 +292,16 @@
 
   <!-- Custom Theme JavaScript -->
   <script src="js/creative.js"></script>
+
+
+  <!-- code pour faire disparaitre la video  -->
+  <script type="text/javascript">
+    jQuery("#video").bind("ended", function() {
+      jQuery(this).fadeOut();
+    });
+  </script>
+
+
 
 </body>
 
