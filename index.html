@@ -41,13 +41,7 @@
 
     <div class="header-content">
 
-      <div class="header-content-inner">
-        <img src="img/logo.png" alt="perlouse" style="width: 30%">
-        <h1>Perlouse</h1>
-        <h2>- Bar à huitres -</h2>
-        <div class="header-address">
-          <p>Pigalle - 49 rue de Douai</p>
-        </div>
+      <div class="header-content-inner" id="header-container" height="300px">
       </div>
 
       <video id="video" autoplay>
@@ -59,7 +53,7 @@
 
   </header>
 
-  <section class="bg-primary">
+<!--   <section class="bg-primary">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -100,7 +94,7 @@
       </div>
     </div>
   </section>
-  <section class="">
+ -->  <section class="">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -111,8 +105,7 @@
               <img src="img/perlouse-map.png" alt="carte perlouse" class="img-responsive" style="max-height: 400px; width: auto; margin: auto;">
             </div>
             <div class="col-lg-6" style="text-align: justify; padding-top: 10px">
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "</p>
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "</p>
+              <p>Nous vous invitons à venir déguster nos huîtres pleine mer de Pirou, nos bulots et crevettes péchés au large de la baie du Mont Saint Michel et une sélection de fromages AOP de Normandie. Tous nos produits sont en direct producteur - sans intermédiaire - et dans une démarche éco-responsable. La carte des vins à été élaborée par un grand caviste parisien. </p>
             </div>
           </div>
         </div>
@@ -129,8 +122,7 @@
             <div class="col-lg-6 ">
               <img src="img/ostreiculteurs.jpg" alt="qui sommes nous" class="img-responsive" style="max-height: 400px; width: auto; margin: auto; margin-bottom: 20px;">
             </div>
-            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "</p>
-            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "</p>
+            <p style="text-align: justify;">Nos fondateurs, deux amis ayant grandi sur les côtes du Cotentin, biberonnés au cidre et nourris exclusivement de fruits de mer, décident un jour de monter à la Capitale, du côté de Pigalle. Là, et restant sur leur faim, ils ont l’idée de partager les produits de leur terroir avec tous ceux qui, comme eux, ont faim de fruits de mer. PERLOUSE est né. Le concept est simple, pendant que l’un cultive ses huîtres avec amour sur les côtes de la Manche, l’autre vous les ouvre en bas de chez vous, au 49, rue de Douai Paris IX. </p>
           </div>
         </div>
       </div>
@@ -156,51 +148,63 @@
             <div class="openinghourscontent section">
               <div>
                 <h2>Horaires</h2>
-                <span id="open-status"><small class="openorclosed">Nous sommes</small></span>
-
               </div>
               <table itemscope class="opening-hours-table">
                 <tr id="Lundi" itemprop="openingHours" title="Open Monday at 9am to 6pm">
                   <td>Lundi</td>
-                  <td class="opens">09:00</td>
-                  <td> - </td>
-                  <td class="closes">18:00</td>
+                  <td>Fermé</td>
                 </tr>
                 <tr id="Mardi" itemprop="openingHours" title="Open Tuesday at 9am to 6pm">
                   <td>Mardi</td>
-                  <td class="opens">09:00</td>
+                  <td class="opens">12h00</td>
                   <td> - </td>
-                  <td class="closes">18:00</td>
+                  <td class="closes">14h30</td>
+                  <td> / </td>
+                  <td class="opens">18h00</td>
+                  <td> - </td>
+                  <td class="closes">23h00</td>
                 </tr>
                 <tr id="Mercredi" itemprop="openingHours" title="Open Wednesday at 9am to 6pm">
                   <td>Mercredi</td>
-                  <td class="opens">09:00</td>
+                  <td class="opens">12h00</td>
                   <td> - </td>
-                  <td class="closes">18:00</td>
+                  <td class="closes">14h30</td>
+                  <td> / </td>
+                  <td class="opens">18h00</td>
+                  <td> - </td>
+                  <td class="closes">23h00</td>
                 </tr>
                 <tr id="Jeudi" itemprop="openingHours" title="Open Thursday at 9am to 8pm">
                   <td>Jeudi</td>
-                  <td class="opens">09:00</td>
+                  <td class="opens">12h00</td>
                   <td> - </td>
-                  <td class="closes">20:00</td>
+                  <td class="closes">14h30</td>
+                  <td> / </td>
+                  <td class="opens">18h00</td>
+                  <td> - </td>
+                  <td class="closes">23h00</td>
                 </tr>
                 <tr id="Vendredi" itemprop="openingHours" title="Open Friday at 9am to 6pm">
                   <td>Vendredi</td>
-                  <td class="opens">09:00</td>
+                  <td class="opens">12h00</td>
                   <td> - </td>
-                  <td class="closes">18:00</td>
+                  <td class="closes">14h30</td>
+                  <td> / </td>
+                  <td class="opens">18h00</td>
+                  <td> - </td>
+                  <td class="closes">23h00</td>
                 </tr>
                 <tr id="Samedi" itemprop="openingHours" title="Open Saturday at 10am to 6pm">
                   <td>Samedi</td>
-                  <td class="opens">10:00</td>
+                  <td class="opens">12h00</td>
                   <td> - </td>
-                  <td class="closes">18:00</td>
+                  <td class="closes">13h00</td>
                 </tr>
                 <tr id="Dimanche" itemprop="openingHours" title="Open Sunday at 11am to 4pm">
                   <td>Dimanche</td>
-                  <td class="opens">11:00</td>
+                  <td class="opens">10h00</td>
                   <td> - </td>
-                  <td class="closes">16:00</td>
+                  <td class="closes">14h00</td>
                 </tr>
               </table>
             </div>
@@ -297,6 +301,11 @@
   <!-- code pour faire disparaitre la video  -->
   <script type="text/javascript">
     jQuery("#video").bind("ended", function() {
+      var logo = $('<img src="img/logo.png" alt="perlouse" style="width: 30%">');
+      var title = $('<h1>Perlouse</h1>');
+      var subtitle = $('<h2>- Bar à huitres -</h2>');
+      var address = $('<div class="header-address"></div').append('<p>Pigalle - 49 rue de Douai</p>');
+      $("#header-container").append(logo, title, subtitle, address);
       jQuery(this).fadeOut();
     });
   </script>
