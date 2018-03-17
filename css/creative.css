@@ -54,7 +54,7 @@ h6 {
 
 p {
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 1.4em;
     line-height: 1.5;
 }
 
@@ -77,17 +77,16 @@ section {
 header {
     position: relative;
     width: 100%;
-/*    min-height: auto;*/
+    height: 50vh;
     text-align: center;
     color: #fff;
-    /*
-    background-image: url(../img/header.png);
+    
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-*/
+
     background-color: black;
 }
 
@@ -320,10 +319,6 @@ header video {
     padding: 5px;
 }
 
-
-
-/* NICOLAS */
-
 .produit_main {
     display: flex;
     flex-direction: column;
@@ -387,3 +382,12 @@ textarea {
     flex-direction: column;
     margin: auto;}
 }
+
+.hide {
+    display: none;
+}
+
+.text-description {
+    text-align: justify; 
+}
+

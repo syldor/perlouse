@@ -42,15 +42,20 @@
     <div class="header-content">
 
       <div class="header-content-inner" id="header-container" height="300px">
+        <img src="img/logo.png" alt="perlouse" style="width: 30%">
+        <h1>Perlouse</h1>
+        <h2>- Bar à huitres -</h2>
+        <div class="header-address">
+          <p>Pigalle - 49 rue de Douai</p>
+        </div>
       </div>
 
-      <video id="video" autoplay>
-        <source src="video/video-1518065290.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-      </video>
 
     </div>
 
+      <video id="video" autoplay>
+        <source src="video/video-1518065290.mp4" type="video/mp4">
+      </video>
   </header>
 
 <!--   <section class="bg-primary">
@@ -102,10 +107,11 @@
           <hr class="primary">
           <div class="row">
             <div class="col-lg-6 ">
-              <img src="img/perlouse-map.png" alt="carte perlouse" class="img-responsive" style="max-height: 400px; width: auto; margin: auto;">
+              <img src="img/perlouse-map.png" alt="carte perlouse" class="img-responsive" >
             </div>
-            <div class="col-lg-6" style="text-align: justify; padding-top: 10px">
-              <p>Nous vous invitons à venir déguster nos huîtres pleine mer de Pirou, nos bulots et crevettes péchés au large de la baie du Mont Saint Michel et une sélection de fromages AOP de Normandie. Tous nos produits sont en direct producteur - sans intermédiaire - et dans une démarche éco-responsable. La carte des vins à été élaborée par un grand caviste parisien. </p>
+            <div class="col-lg-6 text-description">
+              <p>Nous vous invitons à venir déguster nos huîtres pleine mer de Pirou, nos bulots et crevettes péchés au large de la baie du Mont Saint Michel et une sélection de fromages AOP de Normandie. </p>
+              <p>Tous nos produits sont en direct producteur - sans intermédiaire - et dans une démarche éco-responsable. La carte des vins à été élaborée par un grand caviste parisien. </p>
             </div>
           </div>
         </div>
@@ -122,7 +128,10 @@
             <div class="col-lg-6 ">
               <img src="img/ostreiculteurs.jpg" alt="qui sommes nous" class="img-responsive" style="max-height: 400px; width: auto; margin: auto; margin-bottom: 20px;">
             </div>
-            <p style="text-align: justify;">Nos fondateurs, deux amis ayant grandi sur les côtes du Cotentin, biberonnés au cidre et nourris exclusivement de fruits de mer, décident un jour de monter à la Capitale, du côté de Pigalle. Là, et restant sur leur faim, ils ont l’idée de partager les produits de leur terroir avec tous ceux qui, comme eux, ont faim de fruits de mer. PERLOUSE est né. Le concept est simple, pendant que l’un cultive ses huîtres avec amour sur les côtes de la Manche, l’autre vous les ouvre en bas de chez vous, au 49, rue de Douai Paris IX. </p>
+            <div class="col-lg-6 text-description">
+              <p>Nos fondateurs, deux amis ayant grandi sur les côtes du Cotentin, biberonnés au cidre et nourris exclusivement de fruits de mer, décident un jour de monter à la Capitale, du côté de Pigalle. Là, et restant sur leur faim, ils ont l’idée de partager les produits de leur terroir avec tous ceux qui, comme eux, ont faim de fruits de mer. <strong>PERLOUSE est né.</strong> </p>
+            <p>Le concept est simple, pendant que l’un cultive ses huîtres avec amour sur les côtes de la Manche, l’autre vous les ouvre en bas de chez vous, au 49, rue de Douai Paris IX. </p>
+            </div>
           </div>
         </div>
       </div>
@@ -300,12 +309,13 @@
 
   <!-- code pour faire disparaitre la video  -->
   <script type="text/javascript">
+    $("#header-container").hide();
     jQuery("#video").bind("ended", function() {
-      var logo = $('<img src="img/logo.png" alt="perlouse" style="width: 30%">');
-      var title = $('<h1>Perlouse</h1>');
-      var subtitle = $('<h2>- Bar à huitres -</h2>');
-      var address = $('<div class="header-address"></div').append('<p>Pigalle - 49 rue de Douai</p>');
-      $("#header-container").append(logo, title, subtitle, address);
+      // var logo = $('<img src="img/logo.png" alt="perlouse" style="width: 30%">');
+      // var title = $('<h1>Perlouse</h1>');
+      // var subtitle = $('<h2>- Bar à huitres -</h2>');
+      // var address = $('<div class="header-address"></div').append('<p>Pigalle - 49 rue de Douai</p>');
+      $("#header-container").show();
       jQuery(this).fadeOut();
     });
   </script>
