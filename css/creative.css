@@ -80,14 +80,14 @@ header {
     height: 50vh;
     text-align: center;
     color: #fff;
-    
+    overflow: hidden;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 
-    background-color: black;
+    background-color: #0a1e54;
 }
 
 
@@ -150,10 +150,10 @@ header .header-content .header-content-inner p {
 /*-------------------------------*/
 
 
-header video {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+video {
+    width: 100vw;
+/*    height: 100vh;
+*/    position: absolute;
     top: 0;
     left: 0;
 

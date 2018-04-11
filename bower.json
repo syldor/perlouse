@@ -1,0 +1,17 @@
+{
+  "name": "perlouse",
+  "homepage": "https://github.com/syldor/perlouse",
+  "authors": [
+    "syldor <dorey.sylvain@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
