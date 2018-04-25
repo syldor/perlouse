@@ -86,7 +86,6 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-
     background-color: #0a1e54;
 }
 
@@ -255,7 +254,7 @@ video {
     font-family: 'Lucida Console';
     border-radius: 4px;
     box-shadow: 0 0 10px black;
-    padding: 0 10px 0 10px;
+    padding: 0 3em 0 10px;
     overflow: hidden;
     display: inline-block;
     margin-top: 20px;
